@@ -14,7 +14,7 @@ public class LoginPage extends MenuPage{
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public void login(String email, String password) {

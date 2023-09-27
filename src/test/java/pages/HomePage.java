@@ -6,7 +6,7 @@ public class HomePage extends MenuPage {
 
 	public HomePage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 }

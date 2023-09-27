@@ -63,7 +63,7 @@ public class PianoSoundSetting extends PianoPage {
 	// Constructor
 	public PianoSoundSetting(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public void pianoSoundMenuBtn() {

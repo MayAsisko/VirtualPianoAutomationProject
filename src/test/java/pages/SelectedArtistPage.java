@@ -14,7 +14,7 @@ public class SelectedArtistPage extends MusicSheetsPage {
 
 	public SelectedArtistPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public void getArtistBio() {

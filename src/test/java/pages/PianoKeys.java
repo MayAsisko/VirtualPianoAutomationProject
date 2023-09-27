@@ -30,7 +30,7 @@ public class PianoKeys extends PianoPage {
 	// Constructor
 	public PianoKeys(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	// Method to play a single note

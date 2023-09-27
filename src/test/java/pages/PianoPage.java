@@ -43,7 +43,7 @@ public class PianoPage extends HomePage {
 	// Constructor
 	public PianoPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	// Click edit Btn only at home page
