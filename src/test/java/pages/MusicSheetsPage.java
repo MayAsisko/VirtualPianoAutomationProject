@@ -23,11 +23,13 @@ public class MusicSheetsPage extends BasePage {
 			if (getText(el).equalsIgnoreCase(PopularCategory)) {
 				pause(3000);
 				click(el);
-				break;
+				
 			}
-			pause(3000);
+			break;
+			
 
 		}
+		pause(3000);
 	}
 
 	public void clickToOpenListOfGenres() {

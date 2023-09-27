@@ -30,7 +30,6 @@ public class BasePage {
 		// Highlight in the future
 		highlightElement(el, "blue", "pink");
 		el.click();
-		StopHighlightElement(el);
 		pause(2000);
 
 	}
@@ -98,14 +97,7 @@ public class BasePage {
 
 	}
 
-	protected void StopHighlightElement(WebElement element) {
-		String originalStyle = element.getAttribute("style");
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		// Change the style back after few milliseconds
-		js.executeScript("var tmpArguments = arguments;setTimeout(function () {tmpArguments[0].setAttribute('style', '"
-				+ originalStyle + "');},0);", element);
-
-	}
+	
 
 	public void scrollDownPage(int times) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

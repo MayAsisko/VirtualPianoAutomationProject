@@ -57,7 +57,7 @@ public class MusicLibrarySearchByGenreTest extends BaseTest {
 		sgmp.chooseSongFromList("Spooky Scary Skeletons");
 		openWindowAndGetHandles();
 		ssp.pause(3000);
-		ssp.scrollDownPage(8);
+		ssp.scrollDownPage(7);
 		ssp.playSelectedSong();
 		openWindowAndGetHandles();
 		pp.playingTheSongAfterSearch();
