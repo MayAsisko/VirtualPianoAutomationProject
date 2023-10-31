@@ -47,7 +47,7 @@ public class MusicSheetsPage extends BasePage {
 				click(el);
 				break;
 			}
-			System.out.println("Try Again");
+			
 
 		}
 

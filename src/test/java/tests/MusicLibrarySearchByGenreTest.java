@@ -34,7 +34,7 @@ public class MusicLibrarySearchByGenreTest extends BaseTest {
 		msp.clickToOpenListOfGenres();
 		msp.chooseGenreFromList("Dance");
 		openWindowAndGetHandles();
-		sgmp.scrollDownPage(5);
+		sgmp.scrollDownPage(4);
 		sgmp.chooseSongFromList("Better Off Alone");
 		openWindowAndGetHandles();
 		ssp.scrollDownPage(9);
