@@ -29,16 +29,15 @@ public class MusicLibrarySearchByPopularTest extends BaseTest {
 	@Test
 	public void tc01_PlayASongFromPopularCategory1() {
 		mp.clickMusicSheetsWindow();
+		mp.pause(2000);
 		openWindowAndGetHandles();
-		MusicSheetsPage msp = new MusicSheetsPage(driver);
-		msp.scrollDownPage(1);
-		msp.clickOnAPopularCategory("Pop");
-		msp.pause(3000);
+		mp.pause(2000);
+		sgmp.scrollDownPage(1);
+		msp.clickOnCategory(2);
 		openWindowAndGetHandles();
 		sgmp.scrollDownPage(2);
 		sgmp.chooseSongFromList("I'm Not The Only One (Sam Smith)");
 		openWindowAndGetHandles();
-		ssp.pause(3000);
 		ssp.scrollDownPage(7);
 		ssp.playSelectedSong();
 		openWindowAndGetHandles();
@@ -52,14 +51,14 @@ public class MusicLibrarySearchByPopularTest extends BaseTest {
 		mp.clickMusicSheetsWindow();
 		openWindowAndGetHandles();
 		msp.scrollDownPage(2);
-		msp.clickOnAPopularCategory("Disney");
+		msp.clickOnCategory(5);
 		msp.pause(3000);
 		openWindowAndGetHandles();
 		sgmp.scrollDownPage(2);
 		sgmp.chooseSongFromList("Under The Sea (Intermediate)");
 		openWindowAndGetHandles();
 		ssp.pause(3000);
-		ssp.scrollDownPage(5);
+		ssp.scrollDownPage(7);
 		ssp.playSelectedSong();
 		openWindowAndGetHandles();
 		pp.playingTheSongAfterSearch();

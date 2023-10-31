@@ -19,10 +19,11 @@ public class PianoInstrumentsSettingsTest extends BaseTest {
 	}
 
 	@Test
-	// Change sound from piano to Classic Guitar and play few notes
+	// Change sound #1
 	public void tc01_changingSoundToClassicalGuitar() {
 		pss.pianoSoundMenuBtn();
 		pss.pianoSoundTypeBtn();
+		pss.scrollDownPage(1);
 		pss.choosingSoundsFromDd("CLASSICAL GUITAR");
 		pk.playNote("c");
 		pk.playNote("d");
@@ -31,10 +32,11 @@ public class PianoInstrumentsSettingsTest extends BaseTest {
 	}
 
 	@Test
-	// Change sound from piano to Classic Guitar and play few notes
+	// Change sound #2
 	public void tc02_changingSoundToPanFlute() {
 		pss.pianoSoundMenuBtn();
 		pss.pianoSoundTypeBtn();
+		pss.scrollDownPage(1);
 		pss.choosingSoundsFromDd("PAN-FLUTE");
 		pk.playNote("c");
 		pk.playNote("d");
@@ -42,10 +44,11 @@ public class PianoInstrumentsSettingsTest extends BaseTest {
 	}
 
 	@Test
-	// Change sound from piano to Classic Guitar and play few notes
+	// Change sound #3
 	public void tc03_changingSoundToSaxophone() {
 		pss.pianoSoundMenuBtn();
 		pss.pianoSoundTypeBtn();
+		pss.scrollDownPage(1);
 		pss.choosingSoundsFromDd("SAXOPHONE");
 		pk.playNote("c");
 		pk.playNote("d");

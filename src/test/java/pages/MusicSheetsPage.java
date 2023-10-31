@@ -14,22 +14,14 @@ public class MusicSheetsPage extends BasePage {
 	// Constructor
 	public MusicSheetsPage(WebDriver driver) {
 		super(driver);
-		
+
 	}
 
-	public void clickOnAPopularCategory(String PopularCategory) {
-		List<WebElement> list = driver.findElements(By.cssSelector(".piano-menu__search-genres>a>span"));
-		for (WebElement el : list) {
-			if (getText(el).equalsIgnoreCase(PopularCategory)) {
-				pause(3000);
-				click(el);
-				
-			}
-			break;
-			
+	public void clickOnCategory(int CategoryOrder) {
+		List<WebElement> list = driver.findElements(By.cssSelector(".piano-menu__search-genres>a"));
+		click(list.get(CategoryOrder));
+		pause(2000);
 
-		}
-		pause(3000);
 	}
 
 	public void clickToOpenListOfGenres() {
@@ -47,7 +39,6 @@ public class MusicSheetsPage extends BasePage {
 				click(el);
 				break;
 			}
-			
 
 		}
 

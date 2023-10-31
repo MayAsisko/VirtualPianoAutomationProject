@@ -81,7 +81,7 @@ public class PianoSoundSetting extends PianoPage {
 	}
 
 	public void choosingSoundsFromDd(String soundName) {
-		List<WebElement> list = driver.findElements(By.cssSelector(".piano-type.active > div > ul>li"));
+		List<WebElement> list = driver.findElements(By.cssSelector(".type.piano-type.active>.sound-input>.type__custom>li"));
 		for (WebElement el : list) {
 			if (el.getText().equalsIgnoreCase(soundName)) {
 				click(el);
