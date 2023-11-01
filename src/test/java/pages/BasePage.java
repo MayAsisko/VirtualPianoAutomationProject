@@ -28,7 +28,6 @@ public class BasePage {
 
 	protected void click(WebElement el) {
 		// Highlight in the future
-		highlightElement(el, "blue", "pink");
 		el.click();
 		pause(2000);
 
@@ -42,7 +41,7 @@ public class BasePage {
 		try {
 			Thread.sleep(mills);
 		} catch (InterruptedException e) {
-			
+
 			e.printStackTrace();
 		}
 	}
@@ -84,20 +83,6 @@ public class BasePage {
 		click(element);
 
 	}
-
-	protected void highlightElement(WebElement element, String color, String bgColor) {
-		// keep the old style to change it back
-		String originalStyle = element.getAttribute("style");
-		String newStyle = "border: 1px solid " + color + ";background-color:" + bgColor + ";" + originalStyle;
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-
-		// Change the style
-		js.executeScript("var tmpArguments = arguments;setTimeout(function () {tmpArguments[0].setAttribute('style', '"
-				+ newStyle + "');},0);", element);
-
-	}
-
-	
 
 	public void scrollDownPage(int times) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
