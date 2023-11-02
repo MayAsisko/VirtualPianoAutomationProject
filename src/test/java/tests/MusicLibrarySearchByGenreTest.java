@@ -37,6 +37,7 @@ public class MusicLibrarySearchByGenreTest extends BaseTest {
 		sgmp.scrollDownPage(4);
 		sgmp.chooseSongFromList("Better Off Alone");
 		openWindowAndGetHandles();
+		sgmp.pause(100);
 		ssp.scrollDownPage(9);
 		ssp.playSelectedSong();
 		openWindowAndGetHandles();
